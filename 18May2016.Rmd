@@ -121,3 +121,88 @@ Error: object 's' not found
 > for (i in x) {s<-s+i}
 > s
 [1] -1   ###
+
+
+## Logical Variables##
+w<- false
+w
+
+
+> 
+> w<- false
+Error: object 'false' not found
+> w
+Error: object 'w' not found
+> w= FALSE
+> w
+[1] FALSE
+> w= F
+> w
+[1] FALSE
+> ##
+``` 
+> 
+> w<- false
+Error: object 'false' not found
+> w
+Error: object 'w' not found
+> w= FALSE
+> w
+[1] FALSE
+> w= F
+> w
+[1] FALSE
+```
+
+
+```z<-x ==y
+
+
+```
+
+```{r x<- 34243
+length(x)}
+
+```
+
+```{r  s<- "abc\n"}
+
+```
+```{r months <- c("December", "March","January","Feburary","March")
+f <- factor (months)
+f[1]
+f[2]}
+```
+
+
+
+```{r months <- c("December", "March","January","Feburary","March") f <- factor (months)  f[1]}
+
+
+
+```
+```{r}months <- c("December", "March","January","Feburary","March")
+
+```
+
+```{r}
+months <- c("December","March","January","Febuary","March")
+f <-factor (months)
+f[1]
+f[2]
+```
+## Matrix
+
+```{r matrix operations}
+m <- rbind(c(1,4),c(2,2))# row bind
+m
+m<- cbind (c(1,4),c(2,2)) # column bind
+m
+m%*% c(1,1)  # matrix multiplication
+
+m<- matrix(c(1,4,2,2), nrow=2, byrow=True)
+
+
+```
+
+
