@@ -3,3 +3,6 @@ Repo for code and notes from R Immersion Workshop with Dr. joe Song(NMSU) ; Summ
 ## This is a secondary header
 ### This is a tertiary header
 **r
+*1
+*2
+*3
