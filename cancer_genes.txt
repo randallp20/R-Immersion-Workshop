@@ -1,3 +1,3 @@
-gene	chr	begin
+gene  chr	begin
 BRCA1	chr17	43044296
 PTEN	chr10	87863113
