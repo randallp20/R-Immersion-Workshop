@@ -53,3 +53,21 @@ write.table(x,
             col.names = TRUE,
             qmethod = c("escape","double"))
 
+
+
+## gff-version 3
+## find how many...
+
+d<- read.table("Otolemur_garnetti.OtoGar3.80.gtf",nrows=10, sep = "\t")
+dim(d)
+sum(d[,3]=="exon")
+sum(d[,3]==)
+
+##Read data on table
+
+file <- "gencode.v24.annotation.gff3"
+cat("Loading", file, "at", date(), " ... \n")
+GFF <- read.table(file, header=F, sep="\t", nrows=1000)
+colnames(GFF) <- c("seqid", "source", "type", "start", "end", "score", "strand", "phase", "attributes")
+rownames(GFF) <- 1:nrow(GFF)
+
