@@ -71,3 +71,9 @@ GFF <- read.table(file, header=F, sep="\t", nrows=1000)
 colnames(GFF) <- c("seqid", "source", "type", "start", "end", "score", "strand", "phase", "attributes")
 rownames(GFF) <- 1:nrow(GFF)
 
+## read whole data file
+file <- "gencode.v24.annotation.gff3"
+cat("Loading", file, "at", date(), " ... \n")
+GFF <- read.table(file, header=F, sep="\t",)
+colnames(GFF) <- c("seqid", "source", "type", "start", "end", "score", "strand", "phase", "attributes")
+rownames(GFF) <- 1:nrow(GFF)
