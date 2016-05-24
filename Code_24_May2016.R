@@ -27,3 +27,14 @@ numbers <- c("(575)313-2541","575-313-2541","5753132541","06051975")
 matched <- regexec(pattern,numbers)
 values <- regmatches(numbers,matched)
 print(values)
+
+
+## extract the chromosome star end and strand
+
+transcript <- "p@chr10:101542314..101542317,+"
+pattern <- "p@(chr[1-9XYM][0-9]?):([0-9]+)\\.\\.([0-9]+),([+-])"
+matched <- regexec(pattern, transcript)
+values <- regmatches(transcript, matched)
+print(values)
+
+
