@@ -57,3 +57,35 @@ writeXStringSet(DNAStringSet(seq), file="seq.fasta")
 print(date())
 ```
 
+
+
+### 24 May 2015
+
+
+```{r pattern analysis EX1, option 1}
+transcripts <- c("p2@Rab21", 
+                 "p1@Rab21")
+values <- strsplit(transcripts, "@")
+print(values)
+
+```
+
+```{r Pattern analysis Ex1 , option 2}
+transcripts <- c("p2@Rab21", 
+	          "p1@Rab21")
+pattern <- "(p[0-9]+)@(.*)"
+matched <- regexec(pattern, transcripts)
+values <- regmatches(transcripts, matched)
+print(values)
+```
+
+
+```{r , extract area code from list of numbers in two different formats}
+pattern= "\\(([0-9]{3})\\)[0-9]{3}-[0-9]{4}|([0-9]{3})-[0-9]{3}-[0-9]{4}|([0-9]{3})[0-9]{7}"
+numbers <- c("(575)313-2541","575-313-2541","5753132541","06051975")
+matched <- regexec(pattern,numbers)
+values <- regmatches(numbers,matched)
+print(values)
+
+```
+
